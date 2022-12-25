@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_fragm"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Текущие задачи"
+        android:id="@+id/currentTask"
+        android:layout_below="@+id/container_fragm"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/finishTask"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_fragm"
+        android:layout_toRightOf="@+id/currentTask"
+        android:text="Завершенные задачи" />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Повторные"
+        android:id="@+id/againTask"
+        android:layout_below="@+id/container_fragm"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/finishTask"
+
+        />
+
+</RelativeLayout>
